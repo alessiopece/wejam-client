@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { hraTheme } from './theme/theme';
-import Card from './components/Card';
 import Piano from './components/Piano';
-import RedHook from './assets/fonts/RedHook.otf'
+import RedHook from './assets/fonts/RedHook.otf';
+const ENDPOINT = "http://localhost:4001";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -43,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 100px;
       color: ${props => props.theme.colors.textPrimary};
       text-align: center;
+      margin-top: 5vh;
 
     }
 
@@ -54,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+
   return (
     <ThemeProvider theme={hraTheme}>
       <div className="App">
