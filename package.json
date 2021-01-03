@@ -12,10 +12,12 @@
     "@types/react-dom": "^16.9.8",
     "@types/socket.io": "^2.1.12",
     "@types/styled-components": "^5.1.4",
+    "express": "^4.17.1",
     "framer-motion": "^2.9.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "socket.io": "^3.0.4",
     "socket.io-client": "^3.0.4",
     "soundfont-player": "^0.12.0",
     "styled-components": "^5.2.1",
@@ -27,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node server.js"
   },
   "eslintConfig": {
     "extends": [
