@@ -3,7 +3,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { hraTheme } from './theme/theme';
 import Piano from './components/Piano';
 import RedHook from './assets/fonts/RedHook.otf';
-const ENDPOINT = "http://localhost:4001";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

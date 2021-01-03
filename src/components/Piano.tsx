@@ -3,9 +3,8 @@ import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import Soundfont from 'soundfont-player';
 import {io} from "socket.io-client";
-const ENDPOINT = window.location.hostname + ":3000";
 
-const socket = io(ENDPOINT);
+const socket = io();
 
 
 //STYLE
